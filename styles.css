@@ -12,10 +12,11 @@ html{
 }
 
 .card{
+    position: relative;
     background-color:  white;
     color: #666666;
     border: 1px solid #666666;
-    padding: 30px 30px 15px 30px;
+    padding: 30px 30px 50px 30px;
     flex:1; 
     margin-right: 3em;
 
@@ -28,23 +29,45 @@ html{
     font-weight: 700;
 }
 
+.card-description{
+    padding: 0 0 10; 
+    flex-grow: 2;
+
+}
+
+.card-author{  
+    display: flex;
+    flex-direction:   row-reverse;
+    padding: 0 0 30; 
+}
+
+
+.card-footer-container{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 20px 20px; 
+}
+
 .card-footer{
     display: flex;
     justify-content: space-between;
     flex-direction:   row-reverse;   
     color: #e76c67;
-}
-/* .card-like{
-    padding: 0 0 15 ; 
-} */
-
-.card-description{
-    padding: 0 0 10; 
+    
+    
 }
 
-.card-author{  
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction:   row-reverse;
-    padding: 0 0 30; 
+.card-like{
+    align-self: flex-end;
+    /* padding: 0 0 15 ;  */
 }
+
+.card-details{
+    align-self: flex-end;
+    /* padding: 0 0 15 ;  */
+}
+
+
