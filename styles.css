@@ -1,0 +1,15 @@
+.container{
+    border: 1px solid #444444;
+    padding: 30px;
+    margin: 30px;
+}
+
+.card{
+    background-color:  #5D92FF;
+    flex: 1 1 50%;
+    color: #666666;
+    border: 1px solid #efefef;
+    padding: 30px;
+    position: relative;
+
+}

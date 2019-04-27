@@ -1,25 +1,64 @@
-<!-- <script src="scripts.js"> </script> -->
-
 <html>
-    <head>
-    <script>
-      var openFile = function(event) {
-        var input = event.target;
-        var reader = new FileReader();
-        reader.onload = function(){
-          var text = reader.result;
-          var node = document.getElementById('output');
-          node.innerText = text;
-          console.log(reader.result.substring(0, 200));
-        };
-        reader.readAsText(input.files[0]);
-      };
-    </script>
-    </head>
-    <body>
-    <input type='file' accept='text/plain' onchange='openFile(event)'><br>
-    <div id='output'>
-    ...
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<input type='file' accept='text/plain' onchange='openFile(event)'><br>
+<div id='output'>
+</div>
+
+<div class = "container"> 
+        <div class = "card"> 
+            <div class = "card-title"> 
+                Quote    
+            </div>
+            <div class = "card-like">  
+                Like
+            </div>
+            <div class = "card-image">
+    
+            </div>
+            <div class = "card-description">
+                Dude, suckin’ at something is the first step to being sorta good at something.
+            </div>
+            
+            <div class = "card-author">
+                - Jake
+            </div>
+            <div class = "card-details">
+                Read More.
+            </div>
+        </div>
+
+
+
+        <div class = "card"> 
+                <div class = "card-title"> 
+                    Quote    
+                </div>
+                <div class = "card-like">  
+                    Like
+                </div>
+                <div class = "card-image">
+        
+                </div>
+                <div class = "card-description">
+                    Dude, suckin’ at something is the first step to being sorta good at something.
+                </div>
+                
+                <div class = "card-author">
+                    - Jake
+                </div>
+                <div class = "card-details">
+                    Read More.
+                </div>
+            </div>
+
+
+
     </div>
-    </body>
-    </html>
+    
+</body>
+<script src="scripts.js"> </script>
+
+</html>
