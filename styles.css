@@ -2,14 +2,33 @@
     border: 1px solid #444444;
     padding: 30px;
     margin: 30px;
+    display: flex;
 }
 
 .card{
-    background-color:  #5D92FF;
-    flex: 1 1 50%;
+    background-color:  white;
     color: #666666;
-    border: 1px solid #efefef;
+    border: 1px solid #666666;
     padding: 30px;
-    position: relative;
+    flex:1; 
+    margin-right: 2em;
 
+}
+
+
+.card-title{
+    padding: 0 0 15 ; 
+}
+
+.card-like{
+    padding: 0 0 15 ; 
+}
+
+.card-description{
+    padding: 0 0 15; 
+}
+
+.card-author{  
+  
+    padding: 0 0 15; 
 }
