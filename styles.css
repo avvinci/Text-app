@@ -19,10 +19,14 @@ html{
     padding: 30px 30px 50px 30px;
     flex:1; 
     margin-right: 3em;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 
 }   
 
-
+.card:hover {
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.2);
+  }
 .card-title{
     padding: 0 0 30 ; 
     color: #e76c67;
