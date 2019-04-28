@@ -1,2 +1,2 @@
 # Text-app
-Quotes cards
+Quotes cards using CSS flex concepts
