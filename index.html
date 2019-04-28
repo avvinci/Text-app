@@ -4,10 +4,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700" />
 </head>
 <body>
-<input class = "choose-button" type='file' accept='text/plain' onchange='openFile(event)'><br>
+
+<div class="button-container">
+
+    <input class = "choose-button" type='file' accept='text/plain' onchange='openFile(event)'><br>
+    <button class="add-button"> Add Cards </button> 
+    <button class="toggle-button"> Toggle Display </button> 
+
+</div>
+
 <div id='output'>
 </div>
-<button class="add-button"> Add Card </button> 
+
 <div class = "container"> 
         <div class = "card"> 
             <div class = "card-title"> 

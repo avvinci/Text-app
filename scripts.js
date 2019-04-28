@@ -13,9 +13,17 @@ var openFile = function(event) {
   let addbutton = document.getElementsByClassName('add-button') ; 
   addbutton[0].onclick = addCard ; 
 
+  let togglebutton = document.getElementsByClassName('toggle-button') ; 
+  togglebutton[0].onclick = toggleDisplay ; 
+
   function addCard(){
     console.log('adding'); 
-    
+  }
+
+  function toggleDisplay(){
+    console.log('toggling');
+     
+
   }
 
   // console.log(addbutton[0]) ;''
