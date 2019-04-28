@@ -9,3 +9,13 @@ var openFile = function(event) {
     };
     reader.readAsText(input.files[0]);
   };
+
+  let addbutton = document.getElementsByClassName('add-button') ; 
+  addbutton[0].onclick = addCard ; 
+
+  function addCard(){
+    console.log('adding'); 
+    
+  }
+
+  // console.log(addbutton[0]) ;''
