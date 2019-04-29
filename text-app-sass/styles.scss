@@ -1,0 +1,111 @@
+$primary-color: #e76c67 ; 
+$text-color: #666666 ; 
+$border-primary-color: #e76c67 ; 
+
+
+html{
+    line-height: 1.6;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container{
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+}
+
+.card{
+    position: relative;
+    background-color:  white;
+    color: #666666;
+    border: 1px solid #666666;
+    padding: 30px 30px 50px 30px;
+    flex:1; 
+    margin-right: 3em;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+}   
+
+.card:hover {
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.2);
+  }
+.card-title{
+    padding: 0 0 30 ; 
+    color:$primary-color;
+    font-weight: 700;
+}
+
+.card-description{
+    padding: 0 0 10; 
+    flex-grow: 2;
+
+}
+
+.card-author{  
+    display: flex;
+    flex-direction:   row-reverse;
+    padding: 0 0 30; 
+}
+
+
+.card-footer-container{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 20px 20px; 
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:   row-reverse;   
+    color: $primary-color;
+    
+    
+}
+
+.card-like{
+    align-self: flex-end;
+    /* padding: 0 0 15 ;  */
+}
+
+.card-details{
+    align-self: flex-end;
+    /* padding: 0 0 15 ;  */
+}
+
+
+.button-container{
+    padding: 30px;
+    margin: 30px;
+    display:flex; 
+    justify-content: space-between;
+}
+
+.add-button,
+.choose-button,
+.toggle-button{
+    padding: 10px;  
+    /* flex: 1; */
+    background: white;
+    text-align: center;
+    color: $primary-color;
+    padding: 0.75rem 1rem;
+    border: 1px solid $border-primary-color;
+    font-weight: 700;
+    margin: 10px;
+    
+}
+
+.add-button:hover,
+.add-button:focus,
+.toggle-button:hover,
+.toggle-button:focus {
+  background:$primary-color;
+  color: white; 
+  border: 1px solid $border-primary-color;
+}
