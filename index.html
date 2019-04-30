@@ -1,9 +1,9 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="text-app-css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="text-app-css/styles.css" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700" />
-    <link rel="stylesheet" type="text/css" title="blue" href="styles_2.css">
-    <link rel="alternate stylesheet" type="text/css" title="pink" href="styles.css">
+    <link rel="stylesheet" type="text/css" title="blue" href="text-app-css/styles.css">
+    <link rel="alternate stylesheet" type="text/css" title="green" href="text-app-css/styles2.css">
 </head>
 <body>
 
@@ -12,8 +12,8 @@
     <input class = "choose-button" type='file' accept='text/plain' onchange='openFile(event)'><br>
     <button class="add-button"> Add Cards </button> 
     <button class="toggle-button"> Toggle Display </button> 
-    <button type="button" onclick="switch_style('blue');return false;" name="theme" value="Blue Theme" id="blue">Blue Theme</button>
-    <button type="button" onclick="switch_style('pink');return false;" name="theme" value="Pink Theme" id="pink">Pink Theme</button>
+    <button type="button" class="add-button" onclick="switch_style('blue');return false;" name="theme" value="Blue Theme" id="blue">Main Theme</button>
+    <button type="button" class="add-button" onclick="switch_style('green');return false;" name="theme" value="Green Theme" id="green">Green Theme</button>
 </div>
 
 <div id='output'>

@@ -13,7 +13,7 @@ html {
 
 .card {
   position: relative;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.466);
   color: #666666;
   border: 1px solid #666666;
   padding: 30px 30px 50px 30px;
@@ -29,7 +29,7 @@ html {
 
 .card-title {
   padding: 0 0 30;
-  color: #e76c67;
+  color: green;
   font-weight: 700;
 }
 
@@ -57,7 +57,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  color: #e76c67;
+  color: green;
 }
 
 .card-like {
@@ -84,9 +84,9 @@ html {
   /* flex: 1; */
   background: white;
   text-align: center;
-  color: #e76c67;
+  color: green;
   padding: 0.75rem 1rem;
-  border: 1px solid #e76c67;
+  border: 1px solid green;
   font-weight: 700;
   margin: 10px;
 }
@@ -95,7 +95,7 @@ html {
 .add-button:focus,
 .toggle-button:hover,
 .toggle-button:focus {
-  background: #e76c67;
+  background: green;
   color: white;
-  border: 1px solid #e76c67;
+  border: 1px solid green;
 }

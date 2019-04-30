@@ -1,3 +1,9 @@
+$primary-color: green ; 
+$text-color: #666666 ; 
+$border-primary-color: green ; 
+$primary-background-color:rgba(255, 255, 255, 0.466) ; 
+
+
 html{
     line-height: 1.6;
     font-family: 'Nunito', sans-serif;
@@ -5,7 +11,6 @@ html{
     -moz-osx-font-smoothing: grayscale;
 }
 .container{
-    /* border: 1px solid #444444; */
     padding: 30px;
     margin: 30px;
     display: flex;
@@ -13,8 +18,8 @@ html{
 
 .card{
     position: relative;
-    background-color:  white;
-    color: #666666;
+    background-color:  $primary-background-color;
+    color: $text-color;
     border: 1px solid #666666;
     padding: 30px 30px 50px 30px;
     flex:1; 
@@ -29,7 +34,7 @@ html{
   }
 .card-title{
     padding: 0 0 30 ; 
-    color: blue;
+    color:$primary-color;
     font-weight: 700;
 }
 
@@ -59,7 +64,7 @@ html{
     display: flex;
     justify-content: space-between;
     flex-direction:   row-reverse;   
-    color: #e76c67;
+    color: $primary-color;
     
     
 }
@@ -89,9 +94,9 @@ html{
     /* flex: 1; */
     background: white;
     text-align: center;
-    color: #e76c67;
+    color: $primary-color;
     padding: 0.75rem 1rem;
-    border: 1px solid #e76c67;
+    border: 1px solid $border-primary-color;
     font-weight: 700;
     margin: 10px;
     
@@ -101,7 +106,7 @@ html{
 .add-button:focus,
 .toggle-button:hover,
 .toggle-button:focus {
-  background: #e76c67;
+  background:$primary-color;
   color: white; 
-  border: 1px solid #e76c67;
+  border: 1px solid $border-primary-color;
 }
