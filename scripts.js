@@ -33,18 +33,28 @@ var openFile = function(event) {
   togglebutton[0].onclick = toggleDisplay ; 
 
 
-  function createCard(){
+  function createCardDesc(){
     let len = quotes.length; 
-    let index = Math.random() ; 
-    let text =quotes[index] ;
+    let index = Math.floor(Math.random() * len) ; 
+    let text = quotes[index] ;
+    let desc = document.createElement('div') ;
+    desc.classList.add('card-description') ; 
+    desc.innerText = text ; 
+    return desc ; 
   }
-  
+
   function addCard(){
     let elem  = document.createElement('div') ; 
-    elem.classList.add('container') ; 
-    let cardElem = document.createElement('div');
-    cardElem.classList.add('card') ; 
-    elem.appendChild(cardElem); 
+    elem.classList.add('container') ;
+ 
+    for(let i = 0; i < 2 ;i++ ){
+      let cardElem = document.createElement('div');
+      cardElem.classList.add('card') ;
+      let desc = createCardDesc() ;  
+      cardElem.appendChild(desc) ; 
+      elem.appendChild(cardElem); 
+    }
+  
     let par = document.getElementsByClassName('body-container') ; 
     par[0].appendChild(elem) ; 
     console.log('adding'); 
