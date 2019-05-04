@@ -1,3 +1,19 @@
+let quotes = [
+"I am saying, I am the proof that you can ask the universe for it - Jim Carrey", 
+"Set small goals and succed in them",
+"Perfect is the enemy of the good ",
+"Nothing will work unless you do." , 
+"There’s a well-said rule that we either win, or we learn. We lose only when we do not learn." ,
+"The hunt is sweeter than the kill.",
+"No matter how big you think you are, there is always someone bigger. Be humble it costs nothing-Amitabh bachan",
+"He who has a why to live can bear with almost any how.",
+"To live is to suffer, to survive is to find meaning in the suffering. If there is a purpose in life at all, there must be a purpose in suffering and in dying",					
+"The more that you read, the more things you will know. The more that you learn, the more places you’ll go.",
+"A startup is a human institution designed to deliver a new product or service under conditions of extreme uncertainty.",
+"I always do that, get into something and see how far I can go.",
+"All the time you're saying to yourself, 'I could do that, but I won't,' — which is just another way of saying that you can't."
+]
+
 var openFile = function(event) {
     var input = event.target;
     var reader = new FileReader();
@@ -16,7 +32,21 @@ var openFile = function(event) {
   let togglebutton = document.getElementsByClassName('toggle-button') ; 
   togglebutton[0].onclick = toggleDisplay ; 
 
+
+  function createCard(){
+    let len = quotes.length; 
+    let index = Math.random() ; 
+    let text =quotes[index] ;
+  }
+  
   function addCard(){
+    let elem  = document.createElement('div') ; 
+    elem.classList.add('container') ; 
+    let cardElem = document.createElement('div');
+    cardElem.classList.add('card') ; 
+    elem.appendChild(cardElem); 
+    let par = document.getElementsByClassName('body-container') ; 
+    par[0].appendChild(elem) ; 
     console.log('adding'); 
   }
 
