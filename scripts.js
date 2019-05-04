@@ -11,7 +11,13 @@ let quotes = [
 "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.",
 "A startup is a human institution designed to deliver a new product or service under conditions of extreme uncertainty.",
 "I always do that, get into something and see how far I can go.",
-"All the time you're saying to yourself, 'I could do that, but I won't,' — which is just another way of saying that you can't."
+"All the time you're saying to yourself, 'I could do that, but I won't,' — which is just another way of saying that you can't.",
+"Habits do not restrict freedom. They create it. Building habits in the present allows you to do more of what you want in the future",
+"True leaders aren't made by business schools-they make themselves, seeking out the knowledge, skills, and experiences they need to succeed.",
+"Routine in an intelligent man is a sign of ambition.",
+"If you cant generate 10 ideas, generate 20.",
+"A combination of mediocre skills can make you surprisingly valuable.",
+"The Success Formula: Every Skill You Acquire Doubles Your Odds of Success",
 ]
 
 var openFile = function(event) {
