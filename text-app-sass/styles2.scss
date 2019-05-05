@@ -1,7 +1,7 @@
-$primary-color: green ; 
-$text-color: #666666 ; 
-$border-primary-color: green ; 
-$primary-background-color:rgba(255, 255, 255, 0.466) ; 
+$primary-color: #b3b9c5 ; 
+$text-color: #f2777a ; 
+$border-primary-color: #b3b9c5 ; 
+$primary-background-color: #2d2d2d; 
 
 
 html{
@@ -9,6 +9,7 @@ html{
     font-family: 'Nunito', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color:  $primary-background-color;
 }
 .container{
     padding: 30px;
@@ -92,9 +93,9 @@ html{
 .toggle-button{
     padding: 10px;  
     /* flex: 1; */
-    background: white;
+    background:$primary-background-color;
     text-align: center;
-    color: $primary-color;
+    color:$text-color;
     padding: 0.75rem 1rem;
     border: 1px solid $border-primary-color;
     font-weight: 700;
@@ -103,10 +104,8 @@ html{
 }
 
 .add-button:hover,
-.add-button:focus,
-.toggle-button:hover,
-.toggle-button:focus {
-  background:$primary-color;
-  color: white; 
+.toggle-button:hover {
+  background: #6AB0F3; 
+  color: $primary-background-color ; 
   border: 1px solid $border-primary-color;
 }

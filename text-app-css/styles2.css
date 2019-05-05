@@ -3,6 +3,7 @@ html {
   font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2d2d2d;
 }
 
 .container {
@@ -13,8 +14,8 @@ html {
 
 .card {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.466);
-  color: #666666;
+  background-color: #2d2d2d;
+  color: #f2777a;
   border: 1px solid #666666;
   padding: 30px 30px 50px 30px;
   flex: 1;
@@ -29,7 +30,7 @@ html {
 
 .card-title {
   padding: 0 0 30;
-  color: green;
+  color: #b3b9c5;
   font-weight: 700;
 }
 
@@ -57,7 +58,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  color: green;
+  color: #b3b9c5;
 }
 
 .card-like {
@@ -82,20 +83,18 @@ html {
 .toggle-button {
   padding: 10px;
   /* flex: 1; */
-  background: white;
+  background: #2d2d2d;
   text-align: center;
-  color: green;
+  color: #f2777a;
   padding: 0.75rem 1rem;
-  border: 1px solid green;
+  border: 1px solid #b3b9c5;
   font-weight: 700;
   margin: 10px;
 }
 
 .add-button:hover,
-.add-button:focus,
-.toggle-button:hover,
-.toggle-button:focus {
-  background: green;
-  color: white;
-  border: 1px solid green;
+.toggle-button:hover {
+  background: #6AB0F3;
+  color: #2d2d2d;
+  border: 1px solid #b3b9c5;
 }

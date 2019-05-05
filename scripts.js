@@ -74,15 +74,15 @@ var openFile = function(event) {
   }
 
 
-let global_title = 'blue';  
+let global_title = 'main';  
 function switch_style ( )
 {
 
-  if(global_title === 'blue' ){
-    global_title = 'green' ; 
+  if(global_title === 'main' ){
+    global_title = 'dark' ; 
   }
   else{
-    global_title = 'blue' ; 
+    global_title = 'main' ; 
   }
 
   
