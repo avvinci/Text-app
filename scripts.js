@@ -67,21 +67,31 @@ var openFile = function(event) {
   }
 
   function toggleDisplay(){
+    switch_style(); 
     console.log('toggling');
      
 
   }
 
 
-function switch_style ( css_title )
+let global_title = 'blue';  
+function switch_style ( )
 {
 
+  if(global_title === 'blue' ){
+    global_title = 'green' ; 
+  }
+  else{
+    global_title = 'blue' ; 
+  }
+
+  
   let link_tag =  document.getElementsByTagName("link");
   for (let i = 0; i < link_tag.length ; i++ ) {
   
       if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) && link_tag[i].title) {
           link_tag[i].disabled = true ;
-          if (link_tag[i].title == css_title) {
+          if (link_tag[i].title == global_title) {
              link_tag[i].disabled = false ;
           }
        }
@@ -89,3 +99,4 @@ function switch_style ( css_title )
 }
 
 
+// window.onload = setTheme ; 
